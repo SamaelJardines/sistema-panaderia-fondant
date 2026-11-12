@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Dulces Creaciones</title>
+    <link rel="stylesheet" href="CSS/Est-Blog.css">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="../index.html" class="nav-btn btn-inicio">Inicio</a>
+        </div>
+        <div class="nav-right">
+            <a href="menu.html" class="nav-btn btn-green">Menu</a>
+            <a href="nosotros.html" class="nav-btn btn-pink">Nosotros</a>
+
+            <a class="menu-nav__enlace menu-nav__enlace--usuario" href="login.html">
+                <div class="menu-nav__usuario-contenedor">
+                    <img class="menu-nav__icono-usuario" src="img/icons/icono-panadero.png" alt="">
+                </div>
+                <span class="menu-nav__texto-usuario">Usuario</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Post Principal -->
+        <div class="post-hero">
+
+            <h1 class="post-title">El Secreto Detrás de Nuestros Postres: Pasión, Arte y Sabor Artesanal</h1>
+
+            <div class="post-body">
+                <!-- Columna Izquierda: Texto principal -->
+                <div class="text-box">
+                    <p>¡Bienvenidos al rincón más dulce de la web! Si has llegado hasta aquí, es porque compartes con
+                        nosotros una debilidad inconfundible: el amor por lo bien hecho, lo recién horneado y ese toque
+                        de dulzura que alegra cualquier momento del día. En la Panadería Fondant, creemos firmemente que un
+                        postre no es solo una mezcla de harina, azúcar y mantequilla. Cada pastel, galleta o brownie
+                        que sale de nuestro horno cuenta una historia y lleva impregnado un pedacito de nuestra pasión.
+                        Hoy queremos contarte qué es lo que hace que cada bocado sea una experiencia inolvidable.</p>
+                    <p>Muchos nos preguntan cuál es el secreto para lograr esa textura perfecta en nuestros bizcochos
+                        o ese balance exacto de dulzor en nuestras cremas. La respuesta es simple: respeto por la
+                        materia prima.</p>
+                </div>
+
+                <!-- Columna Derecha: Imágenes superpuestas -->
+                <div class="images-box">
+                    <img src="./img/cajera.png" alt="Atención al cliente" class="img-cajero">
+                    <img src="./img/chicas.png" alt="Clientes disfrutando" class="img-chicas">
+                </div>
+            </div>
+
+            <!-- Rótulo Participantes -->
+            <div class="participantes-container">
+                <span class="participantes-badge">Participantes</span>
+            </div>
+        </div>
+
+        <!-- Seccion Publicar Comentario -->
+        <section class="comment-section">
+            <div class="comment-box-wrapper">
+                <div class="comment-side">
+                    <h2>Publica algo para conocer tu opinion.</h2>
+
+                    <div class="post-icon-container">
+                        <img src="img/icons/postear.png" alt="Icono de Postear">
+                    </div>
+                </div>
+
+                <form action="#" method="POST" class="comment-form">
+                    <div class="form-group-row">
+                        <img class="form-avatar" src="img/icons/icono-panadero.png" alt="Foto de perfil">
+                        <div class="form-group-textarea">
+                            <textarea placeholder="Escribe un comentario aqui..." rows="3" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit">Publicar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Sección Comentarios Recientes -->
+        <section class="recent-comments-section">
+            <h2>Comentarios Recientes</h2>
+
+            <div class="comment-item">
+                <img src="img/icons/user-avatar.png" alt="Avatar Gomez Rodriguez">
+                <div>
+                    <h3>CONEZ RODRIGUEZ</h3>
+                    <p>Deberian hacer sushis, si los pasteles les salen buenos, imaginense unos buenos sushis, saludos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="comment-item">
+                <img src="img/icons/user-avatar.png" alt="Avatar Kraken House">
+                <div>
+                    <h3>KRAKEN HOUSE</h3>
+                    <p>Hola, creo que ellos solo se especializan en repostería.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

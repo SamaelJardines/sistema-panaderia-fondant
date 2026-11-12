@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Dulces Creaciones</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap">
+    <link rel="stylesheet" href="CSS/Est-Registro.css">
+</head>
+<body class="pagina-acceso">
+    <main class="tarjeta-acceso">
+        <a href="../paginas/login.html">
+            <img class="login-insignia" src="img/icons/iniciar-sesion.png" alt="" aria-hidden="true">
+        </a>
+        <a class="tarjeta-acceso__cerrar" href="../index.html" aria-label="Volver al inicio">
+            <img src="../paginas/img/icons/close.png" alt="" aria-hidden="true">
+        </a>
+
+        <h1 class="tarjeta-acceso__titulo">Registro</h1>
+
+        <form class="formulario-acceso">
+            <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input class="campo__input" id="nombre" name="nombre"
+                       type="text" autocomplete="name" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input class="campo__input" id="correo" name="correo"
+                       type="email" autocomplete="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono móvil</label>
+                <input class="campo__input" id="telefono" name="telefono"
+                       type="tel" autocomplete="tel" required>
+            </div>
+
+            <div class="campo">
+                <label for="contrasena">Contraseña</label>
+                <input class="campo__input" id="contrasena" name="contrasena"
+                       type="password" autocomplete="new-password" required>
+            </div>
+
+            <div class="campo">
+                <label for="confirmar-contrasena">Confirma tu contraseña</label>
+                <input class="campo__input" id="confirmar-contrasena"
+                       name="confirmar_contrasena" type="password"
+                       autocomplete="new-password" required>
+            </div>
+
+            <button class="btn-principal" type="submit"><span>Registrarse</span></button>
+        </form>
+    </main>
+</body>
+</html>

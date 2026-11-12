@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar - Dulces Creaciones</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap">
+    <link rel="stylesheet" href="CSS/Est-Ordenar.css">
+</head>
+<body class="pagina-ordenar">
+    <header class="orden-encabezado">
+        <nav class="orden-nav" aria-label="Navegación principal">
+            <ul class="orden-nav__lista">
+                <li class="orden-nav__item"><a class="orden-nav__enlace" href="menu.html">Menu</a></li>
+                <li class="orden-nav__item">
+                    <a class="orden-nav__enlace" href="login.html">
+                        <img class="orden-nav__icono" src="../paginas/img/icons/icono-panadero.png" alt="">
+                        Usuario
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="orden-contenido">
+        <section class="orden-producto">
+            <img class="orden-producto__imagen" src="../paginas/img/chocolate.png" alt="Pastel de chocolate">
+            <article>
+                <h1 class="orden-producto__titulo">Pastel de Chocolate</h1>
+                <p class="orden-producto__descripcion">Pastel de 3 leches hecho de chocolate con
+                    glaseado de chocolate con extras de crema y dulce
+                    de vainilla
+                </p>
+                <p class="orden-producto__precio">$699</p>
+            </article>
+        </section>
+
+        <form class="orden-formulario" method="post">
+            <fieldset class="orden-exterior">
+                <div class="orden-columnas">
+                    <div class="orden-bloque">
+                        <h2 class="orden-grupo__titulo">Datos del usuario</h2>
+
+                <fieldset class="orden-grupo">
+                    <div class="grid-datos">
+                        <div class="campo-datos">
+                            <label class="orden-campo__etiqueta" for="nombre">Nombre</label>
+                            <input class="orden-campo" type="text" id="nombre" name="nombre" placeholder="Nombre..."
+                                required>
+                        </div>
+
+                        <div class="campo-datos">
+                            <label class="orden-campo__etiqueta" for="apellido">Apellido</label>
+                            <input class="orden-campo" type="text" id="apellido" name="apellido" placeholder="Apellido..."
+                                required>
+                        </div>
+
+                        <div class="campo-datos">
+                            <label class="orden-campo__etiqueta" for="direccion">Dirección</label>
+                            <input class="orden-campo" type="text" id="direccion" name="direccion"
+                                placeholder="Direccion..." required>
+                        </div>
+
+                        <div class="campo-datos">
+                            <label class="orden-campo__etiqueta" for="numero">Número Telefónico</label>
+                            <input class="orden-campo" type="tel" id="numero" name="numero" placeholder="Numero...."
+                                required>
+                        </div>
+
+                        <div class="campo-datos campo-datos--centrado">
+                            <label class="orden-campo__etiqueta" for="correo">Correo Electrónico</label>
+                            <input class="orden-campo" type="email" id="correo" name="correo" placeholder="Correo...."
+                                required>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="orden-bloque">
+                <h2 class="orden-grupo__titulo">Método de pago</h2>
+
+                <fieldset class="orden-grupo">
+                    <div class="orden-pagos">
+                        <img class="orden-pagos__icono" src="../paginas/img/icons/visa-color.png" alt="Tarjeta Visa">
+                        <img class="orden-pagos__icono" src="../paginas/img/icons/mastercard-color.png"
+                            alt="Tarjeta Mastercard">
+                        <img class="orden-pagos__icono" src="../paginas/img/icons/paypal-color.png" alt="Tarjeta Paypal">
+                        <img class="orden-pagos__icono" src="../paginas/img/icons/mercadopago-color.png"
+                            alt="Tarjeta mercadopago">
+                    </div>
+
+                    <label class="orden-campo__etiqueta" for="num-tarjeta">Número de tarjeta</label>
+                    <input class="orden-campo orden-campo--tarjeta" type="text" id="num-tarjeta" name="num-tarjeta"
+                        inputmode="numeric" maxlength="19" placeholder="1234-5678-9***-****" required>
+
+                    <label class="orden-campo__etiqueta" for="nom-tarjeta">Nombre en la tarjeta</label>
+                    <input class="orden-campo orden-campo--tarjeta" type="text" id="nom-tarjeta" name="nom-tarjeta"
+                        required>
+
+                    <div class="fila-tarjeta">
+                        <div class="campo-tarjeta">
+                            <label class="orden-campo__etiqueta" for="fecha">Fecha de vencimiento</label>
+                            <input class="orden-campo orden-campo--vencimiento" type="month" id="fecha" name="fecha"
+                                value="2026-01" required>
+                        </div>
+
+                        <div class="campo-tarjeta">
+                            <label class="orden-campo__etiqueta" for="cvv">CVV</label>
+                            <input class="orden-campo orden-campo--tarjeta" type="text" id="cvv" name="cvv"
+                                inputmode="numeric" maxlength="4" placeholder="123" required>
+                        </div>
+                    </div>
+
+                    <div class="campo-envio">
+                        <label class="orden-campo__etiqueta" for="metodo-envio">Método de envío</label>
+                        <select class="orden-campo" id="metodo-envio" name="metodo-envio">
+                            <option value="">Seleccionar</option>
+                            <option value="domicilio">Domicilio</option>
+                            <option value="sucursal">Sucursal</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+                </div>
+            </fieldset>
+
+            <label class="orden-campo__etiqueta" for="mensaje">Descripción</label>
+
+            <textarea class="orden-campo" id="mensaje" name="mensaje" rows="6" maxlength="1000"
+                placeholder="Cambios a tomar en cuenta..."></textarea>
+        </form>
+
+        <a class="orden-envio" href="recibo.html">
+            <button class="orden-boton" type="button">Enviar</button>
+        </a>
+    </main>
+</body>
+</html>

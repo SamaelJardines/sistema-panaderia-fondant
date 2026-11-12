@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Dulces Creaciones</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap">
+    <link rel="stylesheet" href="CSS/Est-Carrito_Compras.css">
+</head>
+<body class="pagina-carrito">
+    <header class="encabezado-carrito">
+        <nav aria-label="Navegación principal">
+            <ul class="navegacion-carrito__lista">
+                <li><a class="navegacion-carrito__enlace" href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-carrito">
+        <section class="carrito-productos">
+            <header class="carrito-productos__encabezado">
+                <h2 class="carrito-productos__titulo">Carrito de Compras</h2>
+            </header>
+
+            <div class="lista-productos">
+                <article class="producto-carrito">
+                    <button class="producto-carrito__eliminar" type="button" aria-label="Eliminar Pastel de Chocolate">
+                        <img src="img/icons/close.png" alt="">
+                    </button>
+                    <img class="producto-carrito__imagen" src="img/chocolate.png" alt="Pastel de Chocolate esponjoso">
+                    <div class="producto-carrito__informacion">
+                        <h3 class="producto-carrito__nombre">Pastel de Chocolate</h3>
+                        <p class="producto-carrito__descripcion">Pastel de Chocolate esponjoso cubierto de ganache y crema de chocolate</p>
+                    </div>
+                    <p class="producto-carrito__precio">$599</p>
+                    <div class="control-cantidad">
+                        <button class="control-cantidad__boton" type="button" aria-label="Disminuir cantidad">-</button>
+                        <input class="control-cantidad__valor" type="number" value="1" min="1" aria-label="Cantidad">
+                        <button class="control-cantidad__boton" type="button" aria-label="Aumentar cantidad">+</button>
+                    </div>
+                </article>
+
+                <article class="producto-carrito">
+                    <button class="producto-carrito__eliminar" type="button" aria-label="Eliminar Pastel de Fresa">
+                        <img src="img/icons/close.png" alt="">
+                    </button>
+                    <img class="producto-carrito__imagen" src="img/fresa.png" alt="Pastel de Fresa con mermelada">
+                    <div class="producto-carrito__informacion">
+                        <h3 class="producto-carrito__nombre">Pastel de Fresa</h3>
+                        <p class="producto-carrito__descripcion">Pastel de Fresa con mermelada y crema de fresa, con bizcocho de vainilla</p>
+                    </div>
+                    <p class="producto-carrito__precio">$799</p>
+                    <div class="control-cantidad">
+                        <button class="control-cantidad__boton" type="button" aria-label="Disminuir cantidad">-</button>
+                        <input class="control-cantidad__valor" type="number" value="1" min="1" aria-label="Cantidad">
+                        <button class="control-cantidad__boton" type="button" aria-label="Aumentar cantidad">+</button>
+                    </div>
+                </article>
+
+                <article class="producto-carrito">
+                    <button class="producto-carrito__eliminar" type="button" aria-label="Eliminar Pastel de Vainilla">
+                        <img src="img/icons/close.png" alt="">
+                    </button>
+                    <img class="producto-carrito__imagen" src="img/vainilla.png" alt="Pastel de Vainilla de tres leches">
+                    <div class="producto-carrito__informacion">
+                        <h3 class="producto-carrito__nombre">Pastel de Vainilla</h3>
+                        <p class="producto-carrito__descripcion">Pastel de Vainilla de tres leches con fresas y detalles de chocolate</p>
+                    </div>
+                    <p class="producto-carrito__precio">$599</p>
+                    <div class="control-cantidad">
+                        <button class="control-cantidad__boton" type="button" aria-label="Disminuir cantidad">-</button>
+                        <input class="control-cantidad__valor" type="number" value="1" min="1" aria-label="Cantidad">
+                        <button class="control-cantidad__boton" type="button" aria-label="Aumentar cantidad">+</button>
+                    </div>
+                </article>
+
+                <article class="producto-carrito">
+                    <button class="producto-carrito__eliminar" type="button" aria-label="Eliminar Coyotas tradicionales">
+                        <img src="img/icons/close.png" alt="">
+                    </button>
+                    <img class="producto-carrito__imagen" src="img/coyota.png" alt="Coyotas tradicionales">
+                    <div class="producto-carrito__informacion">
+                        <h3 class="producto-carrito__nombre">Coyotas tradicionales</h3>
+                        <p class="producto-carrito__descripcion">Coyotas tradicionales con relleno de piloncillo, jamoncillo, etc.</p>
+                    </div>
+                    <p class="producto-carrito__precio">$20</p>
+                    <div class="control-cantidad">
+                        <button class="control-cantidad__boton" type="button" aria-label="Disminuir cantidad">-</button>
+                        <input class="control-cantidad__valor" type="number" value="1" min="1" aria-label="Cantidad">
+                        <button class="control-cantidad__boton" type="button" aria-label="Aumentar cantidad">+</button>
+                    </div>
+                </article>
+
+                <article class="producto-carrito">
+                    <button class="producto-carrito__eliminar" type="button" aria-label="Eliminar Macarones Franceses">
+                        <img src="img/icons/close.png" alt="">
+                    </button>
+                    <img class="producto-carrito__imagen" src="img/macarones.png" alt="Macarones franceses">
+                    <div class="producto-carrito__informacion">
+                        <h3 class="producto-carrito__nombre">Macarones Franceses</h3>
+                        <p class="producto-carrito__descripcion">Macarons franceses con suave relleno crema y distintos sabores</p>
+                    </div>
+                    <p class="producto-carrito__precio">$45</p>
+                    <div class="control-cantidad">
+                        <button class="control-cantidad__boton" type="button" aria-label="Disminuir cantidad">-</button>
+                        <input class="control-cantidad__valor" type="number" value="1" min="1" aria-label="Cantidad">
+                        <button class="control-cantidad__boton" type="button" aria-label="Aumentar cantidad">+</button>
+                    </div>
+                </article>
+
+                <article class="producto-carrito">
+                    <button class="producto-carrito__eliminar" type="button" aria-label="Eliminar Muffin integral">
+                        <img src="img/icons/close.png" alt="">
+                    </button>
+                    <img class="producto-carrito__imagen" src="img/muffin.png" alt="Muffin integral">
+                    <div class="producto-carrito__informacion">
+                        <h3 class="producto-carrito__nombre">Muffin integral</h3>
+                        <p class="producto-carrito__descripcion">Muffin integral con trozos de pasas y almendras</p>
+                    </div>
+                    <p class="producto-carrito__precio">$30</p>
+                    <div class="control-cantidad">
+                        <button class="control-cantidad__boton" type="button" aria-label="Disminuir cantidad">-</button>
+                        <input class="control-cantidad__valor" type="number" value="1" min="1" aria-label="Cantidad">
+                        <button class="control-cantidad__boton" type="button" aria-label="Aumentar cantidad">+</button>
+                    </div>
+                </article>
+            </div>
+
+            <section class="acciones-carrito">
+                <div class="formulario-cupon">
+                    <input class="formulario-cupon__campo" type="text" placeholder="Código Cupon" aria-label="Código de cupón">
+                    <button class="formulario-cupon__boton" type="button">Aplicar Código</button>
+                </div>
+                <div>
+                    <button class="acciones-carrito__limpiar" type="button">Limpiar Carro</button>
+                </div>
+            </section>
+        </section>
+
+        <aside class="resumen-pedido">
+            <header class="resumen-pedido__encabezado">
+                <h2 class="resumen-pedido__titulo">Resumen de Orden</h2>
+            </header>
+
+            <div class="resumen-pedido__detalles">
+                <div class="resumen-pedido__fila">
+                    <span>Objetos:</span>
+                    <span class="resumen-pedido__valor">2</span>
+                </div>
+                <div class="resumen-pedido__fila">
+                    <span>Subtotal:</span>
+                    <span class="resumen-pedido__valor">$629</span>
+                </div>
+                <div class="resumen-pedido__fila">
+                    <span>Costo Envío:</span>
+                    <span class="resumen-pedido__valor">$150</span>
+                </div>
+                <div class="resumen-pedido__fila">
+                    <span>IVA:</span>
+                    <span class="resumen-pedido__valor">$0</span>
+                </div>
+                <div class="resumen-pedido__fila">
+                    <span>Cupon de Descuento:</span>
+                    <span class="resumen-pedido__valor">$0</span>
+                </div>
+
+                <div class="resumen-pedido__total">
+                    <span>Total:</span>
+                    <span class="resumen-pedido__valor">$779</span>
+                </div>
+            </div>
+
+            <div class="resumen-pedido__acciones">
+                <a class="resumen-pedido__confirmar" href="ordenar.html">Confirmar Pedido</a>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>

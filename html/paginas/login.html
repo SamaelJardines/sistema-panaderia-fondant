@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Dulces Creaciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap">
+    <link rel="stylesheet" href="CSS/Est-Login.css">
+</head>
+<body class="pagina-acceso">
+    <img class="decoracion-acceso decoracion-acceso--izquierdo"
+         src="img/icons/cupcake.png" alt="" aria-hidden="true">
+    <main class="tarjeta-acceso tarjeta-login">
+        <a href="../paginas/registro.html">
+            <img class="login-insignia" src="img/icons/iniciar-sesion.png" alt="" aria-hidden="true">
+        </a>
+
+        <section class="tarjeta-acceso__contenido">
+            <div class="tarjeta-acceso__barra">
+                <a class="tarjeta-acceso__cerrar" href="../index.html" aria-label="Volver al inicio">
+                    <img src="img/icons/close.png" alt="" aria-hidden="true">
+                </a>
+            </div>
+
+            <h1 class="tarjeta-acceso__titulo">Iniciar Sesión</h1>
+
+            <form class="formulario-acceso">
+                <div class="campo campo--correo">
+                    <label class="sr-only" for="correo"></label>
+                    <img class="campo__icono" src="img/icons/correo.png" alt="" aria-hidden="true">
+                    <input class="campo__input" id="correo" name="correo" type="email"
+                           placeholder="Correo" autocomplete="email" required>
+                </div>
+
+                <div class="campo campo--con-toggle campo--password">
+                    <label class="sr-only" for="contrasena"></label>
+                    <img class="campo__icono" src="img/icons/candado.png" alt="" aria-hidden="true">
+                    <input class="campo__input" id="contrasena" name="contrasena" type="password"
+                           placeholder="Contraseña" autocomplete="current-password" required>
+                    <button class="campo__toggle" type="button" aria-label="Mostrar contraseña"
+                            title="Mostrar u ocultar contraseña">
+                        <img src="img/icons/visible.png" alt="" aria-hidden="true">
+                    </button>
+                </div>
+
+                <div class="login-olvide">
+                    <a class="enlace-suave" href="#recuperar">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button class="btn-principal" type="submit">Iniciar Sesión</button>
+            </form>
+
+            <p class="separador">. . . . . . . o inicia con . . . . . . . </p>
+
+            <section class="sociales" aria-label="Iniciar sesión con otras cuentas">
+                <a class="sociales__boton" href="#google" aria-label="Iniciar sesión con Google">
+                    <img src="img/icons/google-color.png" alt="">
+                </a>
+                <a class="sociales__boton" href="#facebook" aria-label="Iniciar sesión con Facebook">
+                    <img src="img/icons/facebook-color.png" alt="">
+                </a>
+                <a class="sociales__boton" href="#mail" aria-label="Iniciar sesión con Outlook">
+                    <img src="img/icons/mail-color.png" alt="">
+                </a>
+            </section>
+        </section>
+    </main>
+
+    <img class="decoracion-acceso decoracion-acceso--derecha"
+         src="img/icons/baker.png" alt="" aria-hidden="true">
+</body>
+</html>

@@ -1,0 +1,305 @@
+/*Variables globales y configuracion con base */
+:root {
+    --index-fondo: #f6ecdc;
+    --index-texto: #3d3329;
+    --fuente: "Oxygen Mono", monospace;
+}
+
+/*Evitar desborde*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*Limpieza*/
+body,
+h1,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Imágenes responsivas */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Color y estilo*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Estructura y fondo de la pagina de inicio*/
+.pagina-inicio {
+    font-family: var(--fuente);
+    color: var(--index-texto);
+    background-color: var(--index-fondo);
+    background : linear-gradient(180deg, #d88c5f 15%, #f7e6d4 60%, #fffdfa 100%);
+    background-size: 100% auto, 100% 100%;
+    background-position: top center, center;
+    background-repeat: no-repeat, no-repeat;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*Encabezado y barra de navegacion*/
+.encabezado {
+    text-align: center;
+}
+
+.navegacion__lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    list-style: none;
+}
+
+.navegacion__enlace {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.45);
+}
+
+.navegacion__enlace--menu {
+    background-color: #D2FFC2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.navegacion__enlace--nosotros {
+    background-color: #ff8888;
+}
+
+.navegacion__enlace--blog {
+    background-color: #B1BDFB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.navegacion__elemento--usuario {
+    position: absolute;
+    right: 2rem;
+}
+
+.navegacion__enlace--usuario {
+    display: inline-block;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+    color: rgb(246, 241, 241);
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+    font-family: "Cherry Bomb One", cursive, system-ui;
+    font-size: 1.1rem;
+    box-shadow: none;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.navegacion__icono-usuario {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border: 4px solid #8a4e1e;
+    border-radius: 50%;
+    background-color: #e7d8bf;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/*Contenido principal y presentacion*/
+.contenido-principal {
+    text-align: center;
+}
+
+.presentacion-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.presentacion-logo__imagen {
+    width: auto;
+    max-width: 100%;
+}
+
+.presentacion__titulo {
+    margin-bottom: 1.5rem;
+    color: rgba(74, 46, 43, 0.8);
+    font-family: "Cherry Bomb One", cursive, system-ui;
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 0.85;
+}
+
+.presentacion__descripcion {
+    margin-bottom: 0.5rem;
+    color: #6c5235;
+    font-size: 24px;
+    line-height: 0.85;
+}
+
+.presentacion__boton {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2.5rem;
+    border-radius: 15px;
+    background: #ebd28d;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.45);
+    transition: filter 0.2s;
+}
+
+.presentacion__boton:hover {
+    filter: brightness(1.05);
+}
+
+/*Elementos decorativos tematicos*/
+.decoracion-panaderia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 2rem;
+    opacity: 0.85;
+}
+
+.decoracion-panaderia__imagen--baguette-izquierda,
+.decoracion-panaderia__imagen--baguette-derecha {
+    width: 2%;
+}
+
+.decoracion-panaderia__imagen--baguette-izquierda {
+    transform: translateY(30px) rotate(-100deg);
+}
+
+.decoracion-panaderia__imagen--baguette-derecha {
+    transform: translateY(30px) rotate(200deg);
+}
+
+.decoracion-panaderia__imagen--cupcake-izquierdo,
+.decoracion-panaderia__imagen--cupcake-derecho {
+    width: 2.5%;
+}
+
+.decoracion-panaderia__imagen--cupcake-izquierdo {
+    transform: translateY(5px) rotate(-35deg);
+}
+
+.decoracion-panaderia__imagen--cupcake-derecho {
+    transform: translateY(5px) rotate(35deg);
+}
+
+.decoracion-panaderia__imagen--panadero {
+    width: 4%;
+    transform: translateY(-25px);
+}
+
+/*Pie de pagina*/
+.pie-pagina {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 3rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(74, 46, 43, 0.2);
+    color: var(--index-texto);
+    font-size: 0.85rem;
+}
+
+.pie-pagina__derechos {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pie-pagina__informacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.enlaces-legales {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-left: 1.2rem;
+    list-style: disc;
+}
+
+.enlaces-legales__enlace {
+    color: #4a2e2b;
+}
+
+.enlaces-legales__enlace:hover {
+    text-decoration: underline;
+}
+
+.pie-pagina__columna--contacto,
+.pie-pagina__columna--ubicaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.dato-contacto {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    line-height: 1.4;
+}
+
+.dato-contacto__icono {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.pie-pagina__redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.red-social__icono {
+    width: 28px;
+    height: 28px;
+    opacity: 0.75;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.red-social__icono:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.pie-pagina__pagos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0.8rem 0;
+    background-color: #6e6146;
+}
+
+.metodo-pago {
+    width: auto;
+    height: 30px;
+    object-fit: contain;
+    filter: brightness(0.9);
+}

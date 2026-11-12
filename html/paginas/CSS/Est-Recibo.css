@@ -1,0 +1,208 @@
+:root {
+    --recibo-fondo: #1e1e1e;
+    --recibo-tarjeta: #ffffff;
+    --recibo-borde: #e0d5c3;
+    --recibo-texto: #3d3329;
+    --recibo-texto-suave: #7a6e60;
+    --recibo-exito: #2ecc71;
+    --recibo-boton: #dfa15c;
+    --recibo-boton-texto: #ffffff;
+    --fuente: "Oxygen Mono", monospace;
+}
+
+input,
+button {
+    font: inherit;
+    cursor: pointer;
+}
+/*2. ESTILOS BASE Y RESETEO GENERAL*/
+*, *::before, *::after { box-sizing: border-box; }
+body h1, p { margin: 0; }
+img { display: block; max-width: 100%; height: auto; }
+button { font: inherit; cursor: pointer; border: none; }
+
+/*3. CONTENEDOR PRINCIPAL Y FONDO DE PANTALLA */
+body.pagina-recibo {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    font-family: var(--fuente);
+    color: var(--recibo-texto);
+    background-color: var(--recibo-fondo);
+    background-image: url(../img/Fondos/Fondo\ de\ Pantalla.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+/*4. TARJETA CENTRAL DEL RECIBO*/
+.tarjeta-recibo {
+    position: relative;
+    width: 100%;
+    max-width: 580px;
+    padding: 2.5rem 2rem 2rem;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    z-index: 2;
+    border-radius: 4px;
+}
+/*5. ELEMENTOS INTERNOS DE LA TARJETA*/
+
+/* Insignia superior */
+.tarjeta-recibo__insignia {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    padding: 6px;
+    border: 1px solid var(--recibo-borde);
+    border-radius: 50%;
+    background: var(--recibo-tarjeta);
+    transform: translateX(-50%);
+}
+/* Título de confirmación */
+.tarjeta-recibo__titulo {
+    margin: 0.5rem 0 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+/* Icono de éxito (Check verde) */
+.tarjeta-recibo__icono-exito {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: var(--recibo-exito);
+    color: #fff;
+    font-size: 2rem;
+}
+/* Folio de la compra */
+.tarjeta-recibo__folio {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--recibo-texto-suave);
+}
+
+.tarjeta-recibo__folio span {
+    color: var(--recibo-texto);
+    font-weight: bold;
+}
+/* Imagen de la cabecera (Logo) */
+.recibo-info {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
+    background: #faf6f0;
+    font-size: 0.8rem;
+    color: var(--recibo-texto-suave);
+    text-align: left;
+    line-height: 1.5;
+}
+/* 6. CAJA DE DOCUMENTACIÓN / INFORMACIÓN */
+.recibo-info h4 {
+    margin: 0 0 0.3rem;
+    font-size: 0.85rem;
+    color: var(--recibo-texto);
+}
+/* 7. BOTONES DE ACCIÓN (INFERIORES) */
+.btn-recibo {
+    width: 100%;
+    flex: 1;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    color: #ffffff
+}
+.btn-recibo:nth-child(1){
+    background: #dfa15c;
+    color: #ffffff;
+}
+.btn-recibo:nth-child(2){
+    background: #a39685;
+    color: #ffffff;
+}
+
+.btn-recibo:hover {
+    filter: brightness(1.05);
+}
+
+.tarjeta-recibo header img {
+    width: 220px;
+    margin: 0 auto 0.5rem;
+}
+/* 8. DECORACIÓN DE LAS ESQUINAS (FLOTANTES Y ROTADAS)*/
+.recibo-decoracion {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    overflow: visible;
+}
+
+.recibo-decoracion img {
+    position: absolute;
+    width: 220px;
+    height: auto;
+    opacity: 0.85;
+}
+/* Posiciones y rotaciones para las 4 esquinas */
+.recibo-decoracion img:nth-child(1) { top: -40px; left: -80px; transform: rotate(-15deg);}
+.recibo-decoracion img:nth-child(2) { top: -50px; right: -80px; transform: rotate(20deg); }
+.recibo-decoracion img:nth-child(3) { bottom: -50px; left: -80px; transform: rotate(15deg); }
+.recibo-decoracion img:nth-child(4) { bottom: -60px; right: -90px; transform: rotate(-12deg);}
+
+/* 9. ICONOS CENTRALES (EFECTO ABANICO) */
+.recibo-iconos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    height: 60px;
+}
+
+.recibo-iconos img {
+    width: 32px;
+    height: auto;
+    opacity: 0.85;
+    transition: 0.2s ease; 
+}
+/*  Rotación individual para formar el abanico */
+.recibo-iconos img:nth-child(1) {transform: rotate(-18deg) translateY(4px);}
+.recibo-iconos img:nth-child(2) {transform: rotate(-10deg) translateY(-2px);}
+.recibo-iconos img:nth-child(3) {transform: rotate(0deg) translateY(-8px); width: 38px;}
+.recibo-iconos img:nth-child(4) {transform: rotate(10deg) translateY(-2px);}
+.recibo-iconos img:nth-child(5) {transform: rotate(18deg) translateY(4px);}
+
+.recibo-acciones {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* 
+   10. MEDIA QUERIES (RESPONSIVO)
+ */
+@media (max-width: 640px) {
+    .recibo-decoracion { display: none; }
+}

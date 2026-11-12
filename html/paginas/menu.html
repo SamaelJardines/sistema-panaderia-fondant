@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Repostería Artesanal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap">
+    <link rel="stylesheet" href="CSS/Est-Menu.css">
+</head>
+<body class="pagina-menu">
+    <header class="menu-encabezado">
+        <nav class="menu-nav" aria-label="Navegación principal">
+            <ul class="menu-nav__lista">
+                <li class="menu-nav__item"><a class="menu-nav__inicio" href="../index.html">Inicio</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__nosotros" href="nosotros.html">Nosotros</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__blog" href="blog.html">Blog</a></li>
+
+                <li class="menu-nav__item menu-nav__item--acciones">
+                <a class="menu-nav__enlace menu-nav__enlace--carrito" href="carrito-de-compras.html" aria-label="Carrito de Compras">
+                <img class="menu-nav__icono-carrito" src="img/icons/carrito.png" alt="">
+                <span class="menu-nav__badge-mas">+</span>
+                </a>  
+                <a class="menu-nav__enlace menu-nav__enlace--usuario" href="login.html">
+                <div class="menu-nav__usuario-contenedor">
+                <img class="menu-nav__icono-usuario" src="img/icons/icono-panadero.png" alt="">
+                </div>
+                <span class="menu-nav__texto-usuario">Usuario</span>
+                </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="menu-contenido">
+        <section class="menu-categoria">
+            <h1 class="menu-categoria__titulo">Repostería</h1>
+
+            <article class="producto">
+                <div class="producto__contenido">
+                <img class="producto__imagen" src="img/chocolate.png" alt="Pastel de Chocolate">
+                <p class="producto__descripcion">Pastel de Chocolate esponjoso cubierto de ganache y crema de chocolate</p>
+                <p class="producto__precio">$699</p>
+                <div class="producto__footer">
+                <a class="producto__detalle" href="ordenar.html">Ver detalles</a>
+                <button class="producto__agregar" type="button" aria-label="Agregar Pastel de Chocolate al carrito">
+                <img src="img/icons/carrito.png" alt="">
+                </button>
+                </div>
+                </div>
+            </article>
+            <article class="producto">
+                <div class="producto__contenido">
+                <img class="producto__imagen" src="img/fresa.png" alt="Pastel de Chocolate">
+                <p class="producto__descripcion">Pastel de Fresa con mermelada y crema de fresa, con bizcocho de vainilla</p>
+                <p class="producto__precio">$799</p>
+                <div class="producto__footer">
+                <a class="producto__detalle" href="ordenar.html">Ver detalles</a>
+                <button class="producto__agregar" type="button" aria-label="Agregar Pastel de Chocolate al carrito">
+                <img src="img/icons/carrito.png" alt="">
+                </button>
+                </div>
+                </div>
+            </article>
+            <article class="producto">
+                <div class="producto__contenido">
+                <img class="producto__imagen" src="img/vainilla.png" alt="Pastel de Chocolate">
+                <p class="producto__descripcion">Pastel de Vainilla de tres leches con fresas y detalles de chocolate</p>
+                <p class="producto__precio">$599</p>
+                <div class="producto__footer">
+                <a class="producto__detalle" href="ordenar.html">Ver detalles</a>
+                <button class="producto__agregar" type="button" aria-label="Agregar Pastel de Chocolate al carrito">
+                <img src="img/icons/carrito.png" alt="">
+                </button>
+                </div>
+                </div>
+            </article>
+        </section>
+        <p class="menu-ver-mas">Ver más ...</p>
+        <a class="menu-pedido" href="ordenar-personalizado.html">
+            <span class="menu-pedido__boton">Pedido Personalizado</span>
+        </a>
+        <section class="menu-categoria">
+            <h2 class="menu-categoria__titulo menu-categoria__titulo--secundaria">Panadería</h2>
+
+            <article class="producto">
+                <div class="producto__contenido">
+                <img class="producto__imagen" src="img/coyota.png" alt="Coyotas Tradicionales">
+                <p class="producto__descripcion">Coyotas tradicionales con relleno de piloncillo,jamoncillo,etc</p>
+                <p class="producto__precio">$20</p>
+                <div class="producto__footer">
+                <a class="producto__detalle" href="ordenar.html">Ver detalles</a>
+                <button class="producto__agregar" type="button" aria-label="...">
+                <img src="img/icons/carrito.png" alt="">
+                </button>
+                </div>
+                </div>
+            </article>
+            <article class="producto">
+                <div class="producto__contenido">
+                <img class="producto__imagen" src="img/macarones.png" alt="Coyotas Tradicionales">
+                <p class="producto__descripcion">Macarones franceses con suave relleno crema y distintos sabores</p>
+                <p class="producto__precio">$45</p>
+                <div class="producto__footer">
+                <a class="producto__detalle" href="ordenar.html">Ver detalles</a>
+                <button class="producto__agregar" type="button" aria-label="...">
+                <img src="img/icons/carrito.png" alt="">
+                </button>
+                </div>
+                </div>
+            </article>
+            <article class="producto">
+                <div class="producto__contenido">
+                <img class="producto__imagen" src="img/muffin.png" alt="Coyotas Tradicionales">
+                <p class="producto__descripcion">Muffin integral con trozos de pasas y almendras</p>
+                <p class="producto__precio">$30</p>
+                <div class="producto__footer">
+                <a class="producto__detalle" href="ordenar.html">Ver detalles</a>
+                <button class="producto__agregar" type="button" aria-label="...">
+                <img src="img/icons/carrito.png" alt="">
+                </button>
+                </div>
+                </div>
+            </article>
+        </section>
+        <p class="menu-ver-mas">Ver más ...</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repostería – Orden Personalizada</title>
+    <link rel="stylesheet" href="CSS/Est-Ordenar_Personalizado.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li>
+                    <a href="login.html">
+                        <img src="img/icons/icono-panadero.png" alt="Usuario">
+                        Usuario
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="post">
+            <fieldset class="panel">
+                <h2>Pastel Personalizado</h2>
+                <div class="panel-columnas">
+                    <fieldset class="columna">
+                        <h3>Personalizacion</h3>
+                        <div class="grid-personalizacion">
+                            <div class="campo">
+                                <label for="sabor">Sabor del bizcocho</label>
+                                <select id="sabor" name="sabor">
+                                    <option value="">Seleccionar</option>
+                                    <option value="chocolate">Chocolate</option>
+                                    <option value="vainilla">Vainilla</option>
+                                </select>
+                            </div>
+
+                            <div class="campo campo-porciones">
+                                <label for="porciones">Número de Porción</label>
+                                <div class="porciones">
+                                    <button type="button" class="btn-cantidad" aria-label="Restar">-</button>
+                                    <input type="number" id="porciones" name="porciones" value="1" min="1">
+                                    <button type="button" class="btn-cantidad" aria-label="Sumar">+</button>
+                                </div>
+                            </div>
+
+                            <div class="campo">
+                                <label for="relleno">Relleno</label>
+                                <select id="relleno" name="relleno">
+                                    <option value="">Seleccionar</option>
+                                    <option value="chocolate">Chocolate</option>
+                                    <option value="fresa">Fresa</option>
+                                </select>
+                            </div>
+
+                            <div class="campo campo-upload">
+                                <label for="foto">Subir foto de referencia</label>
+                                <input type="file" id="foto" name="foto" accept="image/*">
+                            </div>
+
+                            <div class="campo">
+                                <label for="cobertura">Cobertura</label>
+                                <select id="cobertura" name="cobertura">
+                                    <option value="">Seleccionar</option>
+                                    <option value="chocolate">Chocolate</option>
+                                    <option value="vainilla">Vainilla</option>
+                                </select>
+                            </div>
+
+                            <div class="campo campo-descripcion">
+                                <label for="descripcion">Descripcion</label>
+                                <textarea id="descripcion" name="descripcion" maxlength="1000" placeholder="Cambios a tomar en cuenta....."></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Columna Programación y Entrega -->
+                    <fieldset class="columna col-programacion">
+                        <h3>Programacion y Entrega</h3>
+
+                        <div class="campo-centrado">
+                            <label for="fecha">Fecha de Entrega</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
+
+                        <div class="campo-centrado">
+                            <label for="hora">Hora de entrega</label>
+                            <input type="time" id="hora" name="hora" value="09:41" required>
+                        </div>
+
+                        <div class="campo-centrado">
+                            <label for="persona">Persona a recibir entrega</label>
+                            <input type="text" id="persona" name="persona" placeholder="Nombre...." required>
+                        </div>
+
+                        <div class="campo-centrado">
+                            <label>Recoleccion</label>
+                            <details class="recoleccion">
+                                <summary>Seleccionar</summary>
+                                <div class="recoleccion-opciones">
+                                    <label><input type="radio" name="recoleccion" value="domicilio"> Domicilio</label>
+                                    <label><input type="radio" name="recoleccion" value="sucursal"> Sucursal</label>
+                                </div>
+                            </details>
+                        </div>
+                    </fieldset>
+
+                </div>
+            </fieldset>
+
+            <fieldset class="panel">
+                <h2>Realizar Anticipo</h2>
+                <div class="panel-columnas">
+                    
+                    <!-- Columna Datos del Usuario -->
+                    <fieldset class="columna">
+                        <h3>Datos del usuario</h3>
+                        <div class="grid-datos">
+                            <div class="campo-datos">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre..." required>
+                            </div>
+
+                            <div class="campo-datos">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" name="apellido" placeholder="Apellido..." required>
+                            </div>
+
+                            <div class="campo-datos campo-ancho">
+                                <label for="direccion">Dirección</label>
+                                <input type="text" id="direccion" name="direccion" placeholder="Direccion..." required>
+                            </div>
+
+                            <div class="campo-datos campo-ancho">
+                                <label for="numero">Número Telefónico</label>
+                                <input type="tel" id="numero" name="numero" placeholder="Numero...." required>
+                            </div>
+
+                            <div class="campo-datos campo-ancho">
+                                <label for="correo">Correo Electrónico</label>
+                                <input type="email" id="correo" name="correo" placeholder="Correo...." required>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Columna Método de Tarjeta -->
+                    <fieldset class="columna">
+                        <h3>Metodo de Tarjeta</h3>
+
+                        <div class="metodos-pago">
+                            <img class="metodos-pago__icono" src="img/icons/visa-color.png" alt="Visa">
+                            <img class="metodos-pago__icono" src="img/icons/mastercard-color.png" alt="Mastercard">
+                            <img class="metodos-pago__icono" src="img/icons/paypal-color.png" alt="PayPal">
+                            <img class="metodos-pago__icono" src="img/icons/mercadopago-color.png" alt="Mercado Pago">
+                        </div>
+
+                        <div class="fila-tarjeta">
+                            <div class="campo-tarjeta">
+                                <label for="num-tarjeta">Numero de tarjeta</label>
+                                <input type="text" id="num-tarjeta" name="num-tarjeta" inputmode="numeric" maxlength="19" required>
+                            </div>
+
+                            <div class="campo-tarjeta">
+                                <label>Fecha de Vencimiento</label>
+                                <div class="vencimiento">
+                                    <input type="text" id="mes" name="mes" inputmode="numeric" maxlength="2" placeholder="MM" required>
+                                    <input type="text" id="anio" name="anio" inputmode="numeric" maxlength="4" placeholder="YYYY" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fila-tarjeta">
+                            <div class="campo-tarjeta">
+                                <label for="nombre-tarjeta">Nombre en la Tarjeta</label>
+                                <input type="text" id="nombre-tarjeta" name="nombre-tarjeta" required>
+                            </div>
+
+                            <div class="campo-tarjeta">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" inputmode="numeric" maxlength="4" placeholder="123" required>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                </div>
+            </fieldset>
+
+            <div class="contenedor-boton">
+                <a href="recibo.html">
+                    <button type="button">Enviar</button>
+                </a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
