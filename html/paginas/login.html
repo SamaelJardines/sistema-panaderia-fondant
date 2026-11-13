@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - Dulces Creaciones</title>
+    <title>Iniciar Sesión - Panaderia Fondant</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap">
@@ -26,16 +26,14 @@
 
             <h1 class="tarjeta-acceso__titulo">Iniciar Sesión</h1>
 
-            <form class="formulario-acceso">
+            <form class="formulario-acceso" action="/login" method="POST">
                 <div class="campo campo--correo">
-                    <label class="sr-only" for="correo"></label>
                     <img class="campo__icono" src="img/icons/correo.png" alt="" aria-hidden="true">
                     <input class="campo__input" id="correo" name="correo" type="email"
                            placeholder="Correo" autocomplete="email" required>
                 </div>
 
                 <div class="campo campo--con-toggle campo--password">
-                    <label class="sr-only" for="contrasena"></label>
                     <img class="campo__icono" src="img/icons/candado.png" alt="" aria-hidden="true">
                     <input class="campo__input" id="contrasena" name="contrasena" type="password"
                            placeholder="Contraseña" autocomplete="current-password" required>
